@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleanFresh Laundry - Kontak</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-spinner">
+            <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-3 fw-bold">Memuat Halaman Kontak...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-tshirt me-2"></i>CleanFresh Laundry
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Harga</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Tentang</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold">Hubungi Kami</h1>
+                    <p class="lead">Siap melayani kebutuhan laundry Anda 24/7</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="contact-item text-center h-100">
+                        <div class="contact-icon mb-3">
+                            <i class="fas fa-map-marker-alt fa-3x text-primary"></i>
+                        </div>
+                        <h5>Alamat Kami</h5>
+                        <p class="text-muted">Jl. Bersih Raya No. 123<br>Jakarta Selatan 12345<br>Indonesia</p>
+                        <a href="#" class="btn btn-outline-primary">Lihat di Maps</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="contact-item text-center h-100">
+                        <div class="contact-icon mb-3">
+                            <i class="fas fa-phone fa-3x text-success"></i>
+                        </div>
+                        <h5>Telepon</h5>
+                        <p class="text-muted">Hubungi kami kapan saja</p>
+                        <p><strong>(021) 1234-5678</strong></p>
+                        <p><strong>0812-3456-7890</strong></p>
+                        <a href="tel:+6281234567890" class="btn btn-outline-success">Telepon Sekarang</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="contact-item text-center h-100">
+                        <div class="contact-icon mb-3">
+                            <i class="fab fa-whatsapp fa-3x text-success"></i>
+                        </div>
+                        <h5>WhatsApp</h5>
+                        <p class="text-muted">Chat langsung dengan kami</p>
+                        <p><strong>0812-3456-7890</strong></p>
+                        <a href="https://wa.me/6281234567890" class="btn btn-success" target="_blank">
+                            <i class="fab fa-whatsapp me-2"></i>Chat WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            <h4 class="mb-0 text-center">
+                                <i class="fas fa-envelope me-2"></i>Form Pemesanan
+                            </h4>
+                        </div>
+                        <div class="card-body">
+                            <form id="contactForm" novalidate>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="firstName" class="form-label">Nama Depan *</label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                        <div class="invalid-feedback">Nama depan harus diisi (5-20 karakter)</div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="lastName" class="form-label">Nama Belakang *</label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                        <div class="invalid-feedback">Nama belakang harus diisi (5-20 karakter)</div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email *</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                        <div class="invalid-feedback">Format email tidak valid</div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="phone" class="form-label">Nomor Telepon *</label>
+                                        <input type="tel" class="form-control" id="phone" required>
+                                        <div class="invalid-feedback">Nomor telepon harus diisi (10-15 digit)</div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="address" class="form-label">Alamat Lengkap *</label>
+                                    <textarea class="form-control" id="address" rows="3" required></textarea>
+                                    <div class="invalid-feedback">Alamat harus diisi (minimal 10 karakter)</div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="service" class="form-label">Jenis Layanan *</label>
+                                        <select class="form-select" id="service" required>
+                                            <option value="">Pilih layanan</option>
+                                            <option value="cuci-kering">Cuci Kering</option>
+                                            <option value="cuci-setrika">Cuci Setrika</option>
+                                            <option value="express">Express</option>
+                                            <option value="dry-clean">Dry Clean</option>
+                                            <option value="cuci-sepatu">Cuci Sepatu</option>
+                                        </select>
+                                        <div class="invalid-feedback">Pilih jenis layanan</div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="weight" class="form-label">Perkiraan Berat (kg)</label>
+                                        <input type="number" class="form-control" id="weight" min="1" step="0.5">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Password Akun *</label>
+                                    <div class="input-group">
+                                        <input type="password" class="form-control" id="password" required>
+                                        <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                    <div class="invalid-feedback" id="passwordError">
+                                        Password harus minimal 8 karakter, mengandung huruf besar, kecil, dan angka
+                                    </div>
+                                    <div class="password-requirements mt-2">
+                                        <small class="text-muted">
+                                            <div id="length-req" class="requirement">✗ Minimal 8 karakter</div>
+                                            <div id="uppercase-req" class="requirement">✗ Mengandung huruf besar</div>
+                                            <div id="lowercase-req" class="requirement">✗ Mengandung huruf kecil</div>
+                                            <div id="number-req" class="requirement">✗ Mengandung angka</div>
+                                        </small>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="notes" class="form-label">Catatan Tambahan</label>
+                                    <textarea class="form-control" id="notes" rows="3"
+                                        placeholder="Instruksi khusus, preferensi deterjen, dll."></textarea>
+                                </div>
+
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="pickup">
+                                    <label class="form-check-label" for="pickup">
+                                        Saya memerlukan layanan antar jemput
+                                    </label>
+                                </div>
+
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="terms" required>
+                                    <label class="form-check-label" for="terms">
+                                        Saya setuju dengan <a href="#" class="text-primary">syarat dan ketentuan</a> *
+                                    </label>
+                                    <div class="invalid-feedback">Anda harus menyetujui syarat dan ketentuan</div>
+                                </div>
+
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        <i class="fas fa-paper-plane me-2"></i>Kirim Pesanan
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <h2 class="display-5 fw-bold">Lokasi Kami</h2>
+                    <p class="lead text-muted">Kunjungi outlet kami untuk layanan langsung</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <!-- Placeholder for Google Maps -->
+                            <div class="map-placeholder bg-secondary d-flex align-items-center justify-content-center"
+                                style="height: 400px;">
+                                <div class="text-center text-white">
+                                    <i class="fas fa-map-marker-alt fa-4x mb-3"></i>
+                                    <h4>Google Maps</h4>
+                                    <p>Jl. Bersih Raya No. 123, Jakarta Selatan</p>
+                                    <button class="btn btn-light">Buka di Google Maps</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Pertanyaan Umum</h2>
+                    <p class="lead text-muted">Jawaban untuk pertanyaan yang sering diajukan</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq1">
+                                    Berapa lama waktu pengerjaan laundry?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Waktu pengerjaan bervariasi tergantung jenis layanan: Cuci Kering (1-2 hari), Cuci
+                                    Setrika (2-3 hari), Express (6-12 jam), dan Dry Clean (3-4 hari).
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq2">
+                                    Apakah ada layanan antar jemput?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Ya, kami menyediakan layanan antar jemput gratis untuk pemesanan minimal 5kg di area
+                                    Jakarta dan sekitarnya.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq3">
+                                    Bagaimana cara pembayaran?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Kami menerima pembayaran tunai, transfer bank, e-wallet (GoPay, OVO, DANA), dan
+                                    kartu kredit/debit.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq4">
+                                    Apakah pakaian aman?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Tentu saja! Kami menggunakan sistem tracking untuk setiap pesanan dan memiliki
+                                    asuransi untuk keamanan pakaian Anda.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-tshirt me-2"></i>CleanFresh Laundry
+                    </h5>
+                    <p>Jasa laundry terpercaya dengan layanan berkualitas tinggi sejak 2015. Kepuasan pelanggan adalah
+                        prioritas utama kami.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-whatsapp fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Layanan</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="services.html" class="text-white-50">Cuci Kering</a></li>
+                        <li><a href="services.html" class="text-white-50">Cuci Setrika</a></li>
+                        <li><a href="services.html" class="text-white-50">Express</a></li>
+                        <li><a href="services.html" class="text-white-50">Dry Clean</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Perusahaan</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white-50">Tentang Kami</a></li>
+                        <li><a href="contact.html" class="text-white-50">Kontak</a></li>
+                        <li><a href="pricing.html" class="text-white-50">Harga</a></li>
+                        <li><a href="#" class="text-white-50">Karir</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6 class="fw-bold mb-3">Kontak Info</h6>
+                    <p><i class="fas fa-map-marker-alt me-2"></i>Jl. Bersih Raya No. 123, Jakarta Selatan</p>
+                    <p><i class="fas fa-phone me-2"></i>(021) 1234-5678</p>
+                    <p><i class="fas fa-envelope me-2"></i>info@cleanfresh.com</p>
+                    <p><i class="fas fa-clock me-2"></i>Buka 24 Jam</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 CleanFresh Laundry. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white-50 me-3">Privacy Policy</a>
+                    <a href="#" class="text-white-50">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

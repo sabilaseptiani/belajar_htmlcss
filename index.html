@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleanFresh Laundry - Beranda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        .button:hover {
+            background-color: #007bff;
+            color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-spinner">
+            <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-3 fw-bold">Memuat CleanFresh Laundry...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-tshirt me-2"></i>CleanFresh Laundry
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pricing.html">Harga</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Tentang</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Image Slider -->
+    <section class="hero-section">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div> -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="LaundryService.png" class="d-block w-100" alt="Laundry Service 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-4 fw-bold">Jasa Laundry Terpercaya</h1>
+                        <p class="lead">Bersih, cepat, dan terjangkau dengan layanan antar jemput gratis</p>
+                        <a href="contact.html" class="btn button btn-warning btn-lg">Pesan Sekarang</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="LaundryService.png" class="d-block w-100" alt="Laundry Service 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-4 fw-bold">Express Service 6 Jam</h1>
+                        <p class="lead">Layanan kilat untuk kebutuhan mendesak Anda</p>
+                        <a href="services.html" class="btn btn-warning btn-lg">Lihat Layanan</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="LaundryService.png" class="d-block w-100" alt="Laundry Service 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-4 fw-bold">Diskon 20% Pelanggan Baru</h1>
+                        <p class="lead">Promo spesial untuk pemesanan pertama Anda</p>
+                        <a href="pricing.html" class="btn btn-warning btn-lg">Lihat Harga</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold">Mengapa Memilih CleanFresh?</h2>
+                    <p class="lead text-muted">Kami berkomitmen memberikan layanan terbaik untuk kepuasan Anda</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card text-center h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-clock fa-3x text-primary"></i>
+                        </div>
+                        <h5>Cepat & Tepat Waktu</h5>
+                        <p class="text-muted">Layanan express 6 jam dan regular 1-2 hari dengan jaminan tepat waktu</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card text-center h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-shield-alt fa-3x text-success"></i>
+                        </div>
+                        <h5>Aman & Terpercaya</h5>
+                        <p class="text-muted">Pakaian Anda ditangani dengan hati-hati oleh tenaga ahli berpengalaman</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card text-center h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-dollar-sign fa-3x text-warning"></i>
+                        </div>
+                        <h5>Harga Terjangkau</h5>
+                        <p class="text-muted">Mulai dari Rp 5.000/kg dengan berbagai paket hemat dan promo menarik</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card text-center h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-star fa-3x text-info"></i>
+                        </div>
+                        <h5>Kualitas Premium</h5>
+                        <p class="text-muted">Menggunakan deterjen berkualitas dan teknologi modern untuk hasil terbaik
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-5 fw-bold">Layanan Unggulan</h2>
+                    <p class="lead text-muted">Berbagai pilihan layanan untuk memenuhi kebutuhan Anda</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="card-image">
+                            <img src="cuci setrika.jpg" alt="Cuci Setrika" class="img-fluid">
+                        </div>
+                        <div class="card-content">
+                            <h4>Cuci Setrika</h4>
+                            <p class="price">Rp 7.000/kg</p>
+                            <ul class="features">
+                                <li>Cuci dengan deterjen premium</li>
+                                <li>Setrika rapi dan wangi</li>
+                                <li>Lipat dan kemasan rapi</li>
+                                <li>Waktu 2-3 hari</li>
+                            </ul>
+                        </div>
+                        <div class="card-overlay">
+                            <div class="overlay-content">
+                                <h5>Cuci Setrika Premium</h5>
+                                <p>Layanan lengkap cuci, kering, dan setrika dengan hasil yang rapi dan wangi</p>
+                                <a href="services.html" class="btn btn-light">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="card-image">
+                            <img src="express.jpg" alt="Express" class="img-fluid">
+                        </div>
+                        <div class="card-content">
+                            <h4>Express</h4>
+                            <p class="price">Rp 10.000/kg</p>
+                            <ul class="features">
+                                <li>Selesai dalam 6-12 jam</li>
+                                <li>Prioritas pengerjaan</li>
+                                <li>Kualitas terjamin</li>
+                                <li>Layanan darurat</li>
+                            </ul>
+                        </div>
+                        <div class="card-overlay">
+                            <div class="overlay-content">
+                                <h5>Express Service</h5>
+                                <p>Layanan kilat untuk kebutuhan mendesak dengan kualitas tetap terjamin</p>
+                                <a href="services.html" class="btn btn-light">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="card-image">
+                            <img src="DryClean.png" alt="Dry Clean" class="img-fluid">
+                        </div>
+                        <div class="card-content">
+                            <h4>Dry Clean</h4>
+                            <p class="price">Rp 25.000/pcs</p>
+                            <ul class="features">
+                                <li>Untuk jas, gaun formal</li>
+                                <li>Teknologi dry cleaning</li>
+                                <li>Perawatan khusus</li>
+                                <li>Waktu 3-4 hari</li>
+                            </ul>
+                        </div>
+                        <div class="card-overlay">
+                            <div class="overlay-content">
+                                <h5>Dry Cleaning</h5>
+                                <p>Perawatan khusus untuk pakaian berbahan sensitif dengan teknologi modern</p>
+                                <a href="services.html" class="btn btn-light">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="services.html" class="btn btn-primary btn-lg">Lihat Semua Layanan</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <h2 class="display-4 fw-bold">1000+</h2>
+                        <p class="lead">Pelanggan Puas</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <h2 class="display-4 fw-bold">5000+</h2>
+                        <p class="lead">Pesanan Selesai</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <h2 class="display-4 fw-bold">24/7</h2>
+                        <p class="lead">Layanan Siaga</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <h2 class="display-4 fw-bold">99%</h2>
+                        <p class="lead">Tingkat Kepuasan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold mb-4">Siap Mencoba Layanan Kami?</h2>
+                    <p class="lead mb-4">Dapatkan pakaian bersih dan wangi dengan layanan terpercaya. Hubungi kami
+                        sekarang!</p>
+                    <a href="contact.html" class="btn btn-primary btn-lg me-3">Pesan Sekarang</a>
+                    <a href="about.html" class="btn btn-outline-primary btn-lg">Pelajari Lebih Lanjut</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-tshirt me-2"></i>CleanFresh Laundry
+                    </h5>
+                    <p>Jasa laundry terpercaya dengan layanan berkualitas tinggi sejak 2015. Kepuasan pelanggan adalah
+                        prioritas utama kami.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-whatsapp fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Layanan</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="services.html" class="text-white-50">Cuci Kering</a></li>
+                        <li><a href="services.html" class="text-white-50">Cuci Setrika</a></li>
+                        <li><a href="services.html" class="text-white-50">Express</a></li>
+                        <li><a href="services.html" class="text-white-50">Dry Clean</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Perusahaan</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white-50">Tentang Kami</a></li>
+                        <li><a href="contact.html" class="text-white-50">Kontak</a></li>
+                        <li><a href="pricing.html" class="text-white-50">Harga</a></li>
+                        <li><a href="#" class="text-white-50">Karir</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h6 class="fw-bold mb-3">Kontak Info</h6>
+                    <p><i class="fas fa-map-marker-alt me-2"></i>Jl. Bersih Raya No. 123, Jakarta Selatan</p>
+                    <p><i class="fas fa-phone me-2"></i>(021) 1234-5678</p>
+                    <p><i class="fas fa-envelope me-2"></i>info@cleanfresh.com</p>
+                    <p><i class="fas fa-clock me-2"></i>Buka 24 Jam</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 CleanFresh Laundry. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white-50 me-3">Privacy Policy</a>
+                    <a href="#" class="text-white-50">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
